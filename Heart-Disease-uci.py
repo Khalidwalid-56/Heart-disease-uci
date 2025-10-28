@@ -69,18 +69,18 @@ with col1:
     age = st.number_input("Age (years)", min_value=0, max_value=120, value=30)
     sex = st.selectbox("gender", ["Male", "Female"])
     cp = st.selectbox("Chest Pain Type", ["Typical Angina", "Atypical Angina", "Non-Anginal Pain", "Asymptomatic"])
-    trestbps = st.number_input("Resting Blood Pressure (mm Hg)", min_value=0, max_value=250, value=120)
+    trestbps = st.number_input(" Blood Pressure (mm Hg)", min_value=0, max_value=250, value=120)
     chol = st.number_input("Cholesterol (mg/dl)", min_value=0, max_value=600, value=200)
     fbs = st.selectbox("Fasting Blood Sugar > 120 mg/dl?", ["Yes", "No"])
 
 with col2:
     restecg = st.selectbox("Resting ECG", ["Normal", "ST-T wave abnormality", "Left Ventricular Hypertrophy"])
     thalach = st.number_input("Maximum Heart Rate Achieved", min_value=60, max_value=220, value=150)
-    exang = st.selectbox("Exercise-Induced Angina", ["Yes", "No"])
-    oldpeak = st.number_input("Oldpeak (ST depression)", min_value=0.0, max_value=10.0, step=0.1, value=1.0)
-    slope = st.selectbox("ST Slope", ["Upsloping", "Flat", "Downsloping"])
-    ca = st.slider("Number of Major Vessels Colored by Fluoroscopy", min_value=0, max_value=3, value=0)
-    thal = st.selectbox("Thalassemia", ["Normal", "Fixed Defect", "Reversible Defect"])
+    exang = st.selectbox("Chest Pain with Exercise", ["Yes", "No"])
+    oldpeak = st.number_input("ST Level ", min_value=0.0, max_value=10.0, step=0.1, value=1.0)
+    slope = st.selectbox("ST Shape", ["going up", "Flat", "Downsloping"])
+    ca = st.slider("Blocked Arteries ", min_value=0, max_value=3, value=0)
+    thal = st.selectbox("Anemia ", ["Normal", "Fixed Defect", "Reversible Defect"])
 
 # =========================
 # data gineration

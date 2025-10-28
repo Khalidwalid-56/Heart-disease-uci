@@ -78,7 +78,7 @@ with col2:
     thalach = st.number_input("Maximum Heart Rate Achieved", min_value=60, max_value=220, value=150)
     exang = st.selectbox("Chest Pain with Exercise", ["Yes", "No"])
     oldpeak = st.number_input("ST Level ", min_value=0.0, max_value=10.0, step=0.1, value=1.0)
-    slope = st.selectbox("ST Shape", ["going up", "Flat", "Downsloping"])
+    slope = st.selectbox("ST Shape", ["Upsloping", "Flat", "Downsloping"])
     ca = st.slider("Blocked Arteries ", min_value=0, max_value=3, value=0)
     thal = st.selectbox("Anemia ", ["Normal", "Fixed Defect", "Reversible Defect"])
 
@@ -104,7 +104,7 @@ input_data = np.array([[
     thalach,
     exang_map[exang],
     oldpeak,
-    slope_map[shape],
+    slope_map[slope],
     ca,
     thal_map[thal]
 ]])

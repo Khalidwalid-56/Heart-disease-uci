@@ -95,7 +95,7 @@ thal_map = {"Normal": 1, "Fixed Defect": 2, "Reversible Defect": 3}
 
 input_data = np.array([[ 
     age,
-    sex_map[sex],
+    sex_map[gender],
     cp_map[cp],
     trestbps,
     chol,
@@ -112,7 +112,7 @@ input_data = np.array([[
 # =========================
 # predict
 # =========================
-if st.button("🔍 Predict"):
+if st.button("Predict"):
     prediction = model.predict(input_data)[0]
     probability = model.predict_proba(input_data)[0][1] * 100  # Percentage
 

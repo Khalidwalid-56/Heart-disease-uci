@@ -95,7 +95,7 @@ thal_map = {"Normal": 1, "Fixed Defect": 2, "Reversible Defect": 3}
 
 input_data = np.array([[ 
     age,
-    sex_map[gender],
+    sex_map[sex],
     cp_map[cp],
     trestbps,
     chol,

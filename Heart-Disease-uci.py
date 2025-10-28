@@ -104,7 +104,7 @@ input_data = np.array([[
     thalach,
     exang_map[exang],
     oldpeak,
-    slope_map[slope],
+    slope_map[shape],
     ca,
     thal_map[thal]
 ]])

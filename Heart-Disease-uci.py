@@ -67,7 +67,7 @@ col1, col2 = st.columns(2)
 
 with col1:
     age = st.number_input("Age (years)", min_value=0, max_value=120, value=30)
-    sex = st.selectbox("Sex", ["Male", "Female"])
+    sex = st.selectbox("gender", ["Male", "Female"])
     cp = st.selectbox("Chest Pain Type", ["Typical Angina", "Atypical Angina", "Non-Anginal Pain", "Asymptomatic"])
     trestbps = st.number_input("Resting Blood Pressure (mm Hg)", min_value=0, max_value=250, value=120)
     chol = st.number_input("Cholesterol (mg/dl)", min_value=0, max_value=600, value=200)
